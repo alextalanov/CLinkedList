@@ -15,7 +15,7 @@ typedef void (* consumer)(void *);
 
 struct LinkedList {
     struct LinkedList *next;
-    char *value;
+    void *value;
 };
 
 struct LinkedList *list_init(void *value);
